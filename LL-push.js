@@ -35,7 +35,7 @@ class LinkedList {
         */
         
         
-        // what is method chaining 
+        // what is method chaining ....
         // Method chaining is a common design pattern in object-oriented programming that allows you to call multiple methods on the same object in a single line of code by having each method return the object itself. In JavaScript, this pattern is facilitated by the this keyword within class methods.
     }
 }
