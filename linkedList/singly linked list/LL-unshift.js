@@ -12,6 +12,7 @@ class LinkedList {
     this.tail = this.head;
     this.length = 1;
   }
+
   push(value) {
     const newNode = new Node(value);
     if (this.head === null && this.tail === null) {
@@ -49,9 +50,40 @@ class LinkedList {
     // return this;
     //for same chaining concept we can use here
   }
+
+  unshift(value) {
+    const newNode = new Node(value);
+    if (this.head === null) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+    length++;
+    return this;
+  }
+
+  printList() {
+    if (this.head == null) {
+      console.log("List is empty");
+    } else {
+      //1,2
+      let temp = this.head; //1
+      let i = 0;
+      //   condition true
+      while (temp !== null) {
+        console.log(`Node ${i} value:`, temp.value);
+
+        temp = temp.next;
+        i++;
+      }
+    }
+  }
 }
 let myLinkedList = new LinkedList(4);
 myLinkedList.push(8).push(44).push(85);
-console.log(myLinkedList);
-let returnPopValue = myLinkedList.pop();
-console.log(returnPopValue);
+
+myLinkedList.unshift(78);
+myLinkedList.unshift(70);
+myLinkedList.printList();
