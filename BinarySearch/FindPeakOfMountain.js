@@ -42,3 +42,4 @@ function FindPeakOfMountain(arr) {
     return high
 }
 console.log("Find at the index : ", FindPeakOfMountain([0, 2, 3, 4, 5, 3, 1]))
+console.log("Find at the index : ", FindPeakOfMountain([0, 2, 3, 4, 5, 3, 1]))
