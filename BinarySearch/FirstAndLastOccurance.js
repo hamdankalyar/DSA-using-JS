@@ -44,3 +44,4 @@ function lastOccurance(arr, x) {
 }
 console.log("First occurance : ", firstOccurance([3, 4, 4, 5], 1))
 console.log("Last occurance : ", lastOccurance([3, 4, 4, 4], 4))
+console.log(0 + Math.floor((0 - 0) / 2))

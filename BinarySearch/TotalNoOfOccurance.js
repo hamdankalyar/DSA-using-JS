@@ -43,8 +43,6 @@ function lastOccurance(arr, x) {
     return ans
 }
 console.log("First occurance : ", firstOccurance([3, 4, 4, 5], 1))
-console.log("Last occurance : ", lastOccurance([3, 4, 4, 4], 4))
-
-let firstOccurance = firstOccurance([3, 4, 4, 5], 1)
-let lastOccurance = lastOccurance([3, 4, 4, 4], 4)
-let totalOccurance = lastOccurance - firstOccurance + 1
+console.log("Last occurance : ", lastOccurance([3, 4, 4, 5], 4))
+let totalOccurance = lastOccurance([3, 4, 4, 4, 4, 5], 4) - firstOccurance([3, 4, 4, 4, 4, 5], 4) + 1
+console.log("Total occurance : ", totalOccurance)
