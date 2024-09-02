@@ -14,4 +14,4 @@ function searchInArray(arr, index, ele) {
 }
 
 // Test case
-console.log(searchInArray([1, 2, 3, 4], 0, 5)); // Expected output: 1
+console.log(searchInArray([1], 0, 1)); // Expected output: 1
